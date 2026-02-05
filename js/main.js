@@ -4,17 +4,10 @@ const projectsList = [
         name: "DPE",
         desc: "Etude de modification de l’immeuble pour réduire la consommation électrique.",
         techList: ["ETL", "PostgreSQL", "Python", "Data Mining", "Dataiku", "PowerBI"],
-        linkDemo: "",
-        linkGit: ""
+        linkDemo: "https://app.powerbi.com/view?r=eyJrIjoiNDVmNGU4MGItODFiMC00YWZlLTllMjMtODA3MWE2OTY0YWFmIiwidCI6IjE2MTUwNTk5LWViYjAtNGZjZi05NGE1LTYwMTA4MjNjN2JkNSIsImMiOjh9",
+        linkGit: "https://github.com/nhung16dec/dataproject_DPE"
     },
-    {
-        img: "pouvoirachat.png",
-        name: "Pouvoir d'achat",
-        desc: "Ce projet vise à analyser l'impact des revenus, des dépenses et des niveaux de vie sur le pouvoir d'achat des ménages à l'aide d'un modèle de régression linéaire.",
-        techList: ["R"],
-        linkDemo: "",
-        linkGit: ""
-    },
+    
     {
         img: "webscrapping.png",
         name: "Database Friends",
@@ -38,22 +31,22 @@ const projectsList = [
         techList: ["R", "Rshiny", "Test statistic"],
         linkDemo: "https://www.youtube.com/watch?v=ukGTO55Rfmo",
         linkGit: "https://github.com/nhung16dec/Analyse_multi_project_senso"
-    },
-    {
-        img: "sondage.png",
-        name: "Méthode d'échantillonage '",
-        desc: "Analyse statistique des mariages maghrébins par méthodes d'échantillonnage.",
-        techList: ["R"],
-        linkDemo: "",
-        linkGit: ""
-    },
+    },    
     {
         img: "astro.png",
         name: "Étude des émetteurs",
         desc: "Étude des statistiques comparées dans le temps de chacun de ces émetteurs sur une durée fixe répétée 3 fois sur 10 ans (2008, 2012, 2016)",
-        techList: ["R"],
-        linkDemo: "",
-        linkGit: ""
+        techList: ["Python","GammaPy", "R", "Statistical analysis and visualization"],
+        linkDemo: "./assets/pdf/proj_astro.pdf",
+        linkGit: "https://github.com/nhung16dec/Study-of-transmitters"
+    },
+    {
+        img: "vie.png",
+        name: "L'Espérance de Vie",
+        desc: "cette étude vise à identifier et modéliser les facteurs socio-économiques et sanitaires qui influencent l'espérance de vie à travers le monde.",
+        techList: ["R", "Linear Regression"],
+        linkDemo: "./assets/pdf/proj_vie.pdf",
+        linkGit: "https://github.com/nhung16dec/Linear_regression"
     },
     {
         img: "bi.png",
@@ -68,8 +61,16 @@ const projectsList = [
         name: "Collecte automatisée des données par un IoT",
         desc: "Création de la connexion d'un Arduino à une Base de Données via une Application Mobile",
         techList: ["MySQL", "IoT", "Arduino"],
-        linkDemo: "",
-        linkGit: ""
+        linkDemo: "./assets/projectcover/proj_iot.png",
+        linkGit: "https://github.com/nhung16dec/SAE3_05"
+    },
+    {
+        img: "sondage.png",
+        name: "Méthode d'échantillonage",
+        desc: "Analyse statistique des mariages maghrébins par méthodes d'échantillonnage.",
+        techList: ["R", "confidence intervals"],
+        linkDemo: "./assets/pdf/proj_sondage.pdf",
+        linkGit: "https://github.com/nhung16dec/3.1_PLAN_EXPERIENCE"
     },
 ];
 
