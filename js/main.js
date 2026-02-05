@@ -36,7 +36,7 @@ const projectsList = [
         name: "shopping cart",
         desc: "Étude sensorielle sur une degustation d’eau aromatisée via l'ACP et les tests statistiques",
         techList: ["R", "Rshiny", "Test statistic"],
-        linkDemo: "",
+        linkDemo: "https://www.youtube.com/watch?v=ukGTO55Rfmo",
         linkGit: ""
     },
     {
