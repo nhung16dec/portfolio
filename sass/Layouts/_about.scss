@@ -1,0 +1,106 @@
+.about {
+    padding-top: $num-12;
+    @include background;
+
+    .container {
+        padding: $num-9 $num-7;
+
+        // About Me
+        .aboutMe {
+
+
+            .aboutMe__info {
+                padding: $num-9 0;
+
+                .row {
+
+                    .info__photo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            height: auto;
+                            max-width: 80%;
+
+                            @include phones {
+                                width: 40%;
+                            }
+
+                            @include x-phones {
+                                width: 30%;
+                            }
+                        }
+
+                        @include tablets {
+                            align-items: flex-start;
+                        }
+                    }
+
+                    .info__content {
+                        .info__text {
+                            font-size: $num-5;
+                            color: $blue-1;
+                            text-align: justify;
+
+                            @include tablets {
+                                font-size: $num-5 - 2;
+                            }
+
+                            @include x-phones {
+                                font-size: $num-17;
+                            }
+                        }
+
+                        .info__signature {
+                            margin-top: $num-10;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            align-items: center;
+
+                            .info__cv {
+                                .btnWhite {
+                                    @include x-phones {
+                                        font-size: $num-17;
+                                        padding: $num-3 $num-5;
+                                    }
+                                }
+                            }
+
+                            .signature {
+                                img {
+                                    width: 75%;
+
+                                    @include desktops {
+                                        width: 60%;
+                                    }
+                                }
+                            }
+
+                            @include desktops {
+                                grid-template-columns: repeat(2, 1fr);
+                                margin-top: $num-10 - 10;
+                            }
+
+                            @include phones {
+                                text-align: center;
+                            }
+
+                            @include x-phones {
+                                margin-top: $num-8 + 4;
+                            }
+                        }
+
+                        @include phones {
+                            margin-top: $num-7;
+                        }
+
+                        @include x-phones {
+                            margin-top: $num-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

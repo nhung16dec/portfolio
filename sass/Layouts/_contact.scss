@@ -1,0 +1,98 @@
+.contact {
+    padding-top: $num-12;
+
+    .container {
+        padding: $num-9 $num-7;
+
+        .sectionTitle {
+            .title_brown::before {
+                left: $num-14;
+
+                @include tablets {
+                    left: $num-14 - 15;
+                }
+
+                @include x-phones {
+                    left: $num-16 + 8;
+                    top: $num-6 + 1;
+                }
+            }
+        }
+
+        .contact__content {
+            padding: 48px 0;
+
+            .row {
+                .contact__name {
+                    h2 {
+                        text-transform: capitalize;
+                        color: $blue-4;
+                        font-weight: $fw-6;
+                        margin-bottom: 0;
+                        font-size: $num-8;
+
+                        @include tablets {
+                            font-size: $num-7 + 2;
+                        }
+                    }
+
+                    p:nth-child(2) {
+                        color: $blue-3;
+                        font-size: $num-5 + 1;
+                    }
+
+                    p:nth-child(3) {
+                        font-size: $num-5 - 2;
+                    }
+
+
+                }
+                .contact__social {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .social__item {
+                        a {
+                            background: $blue-4;
+                            width: $num-10 + $num-3;
+                            height: $num-10 + $num-3;
+                            line-height: $num-10 + $num-3;
+                            display: inline-block;
+                            text-align: center;
+                            border-radius: 50%;
+                            font-size: $num-6;
+                            color: $white-1;
+                            transition: all .5s ease;  
+                            
+                            &:hover {
+                                background: $white-1;
+                                color: $blue-4;
+                                border: 2px solid $blue-4;
+                            }
+
+                            @include tablets {
+                                width: $num-10;
+                                height: $num-10;
+                                line-height: $num-10;
+                            }
+
+                            @include phones {
+                                width: $num-9 + 2;
+                                height: $num-9 + 2;
+                                line-height: $num-9 + 2;
+                                font-size: $num-5;
+                                margin-right: $num-4;
+                            }
+                        }
+                    }
+
+                    @include phones {
+                        margin-top: $num-4;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+.skills {
+    padding-top: $num-12;
+
+    .container {
+        padding: $num-9 $num-7;
+
+        .mySkills {
+
+            .sectionTitle {
+                h2.title_brown {
+                    &::before {
+                        @include tablets {
+                            left: $num-16;
+                        }
+
+                        @include x-phones {
+                            left: $num-13 - 5;
+                            top: $num-6;
+                        }
+                    }
+                }
+            }
+
+            .accordion {
+                padding: $num-9 0;
+
+                .accordion-btnGroups {
+                    display: flex;
+
+                    .btnSkills {
+                        display: flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        margin-right: $num-4;
+                        color: $white-1;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        .accordion-button {
+                            padding: 0;
+                            text-decoration: none;
+                            background-color: transparent;
+                            color: $white-1;
+                            font-size: $num-5;
+                            font-weight: $fw-3;
+
+                            &::after {
+                                margin-left: $num-3;
+                                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23F8F7F4' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+                                @include desktops {
+                                    margin-left: $num-2;
+                                }
+
+                                @include tablets {
+                                    background-size: $num-17 + 1;
+                                }
+
+                                @include phones {
+                                    background-size: $num-17;
+                                }
+
+                            }
+
+                            &:not(.collapsed) {
+                                box-shadow: none;
+                            }
+
+                            @include desktops {
+                                font-size: $num-4 + 2;
+                            }
+
+                            @include tablets {
+                                font-size: $num-4 - 1;
+                            }
+
+                            @include phones {
+                                font-size: $num-17 - 2;
+                            }
+
+                            @include x-phones {
+                                font-size: $num-4 - 1;
+                            }
+                        }
+
+                        &:hover {
+                            .accordion-button {
+                                color: $blue-4;
+                                font-weight: $fw-5;
+
+                                &::after {
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23704f5b' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                }
+                            }
+
+
+                        }
+
+                        @include desktops {
+                            margin-right: $num-3;
+                        }
+
+                        @include tablets {
+                            margin-bottom: $num-3;
+                            padding: $num-3 $num-5;
+                        }
+
+                        @include phones {
+                            margin-bottom: $num-2 + $num-1;
+                            margin-right: $num-2 + $num-1;
+                            padding: $num-3 $num-4;
+                        }
+
+                        @include x-phones {
+                            margin-bottom: $num-3;
+                            padding: $num-2 + 1 $num-3 + 2;
+                        }
+                    }
+
+                    @include tablets {
+                        flex-wrap: wrap;
+                    }
+                }
+
+                .accordion-contentGroups {
+                    margin-top: $num-5;
+
+                    .accordion-collapse {
+
+                        .card-body {
+                            display: grid;
+                            grid-template-columns: repeat(5, auto);
+                            grid-gap: $num-5;
+                            padding: $num-5;
+
+                            .mySkills__item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: $white-1;
+                                padding: $num-5 $num-7;
+                                background: $white-2;
+                                border-radius: $num-4;
+                                transition: all .3s ease-in-out;
+
+                                .item__logo {
+                                    @include desktops {
+                                        width: $num-15;
+                                    }
+
+                                    @include tablets {
+                                        width: $num-7 + $num-3;
+                                    }
+
+                                    @include phones {
+                                        width: $num-8;
+                                    }
+                                }
+
+                                .item__text {
+                                    margin-bottom: 0;
+                                    margin-left: $num-3;
+                                    text-transform: uppercase;
+                                    font-weight: $fw-5;
+                                    font-size: $num-4 + 1;
+
+                                    @include tablets {
+                                        margin-left: 8px;
+                                    }
+                                }
+
+                                &:hover {
+                                    background-color: $blue-1;
+                                    transform: scale(1.1);
+                                }
+
+                                @include phones {
+                                    padding: $num-4 $num-6;
+                                }
+
+                            }
+
+                            @include desktops {
+                                grid-template-columns: repeat(4, auto);
+                            }
+
+                            @include tablets {
+                                grid-template-columns: repeat(3, auto);
+                            }
+
+                            @include phones {
+                                grid-template-columns: repeat(2, auto);
+                            }
+
+                            @include x-phones {
+                                grid-template-columns: auto;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+}

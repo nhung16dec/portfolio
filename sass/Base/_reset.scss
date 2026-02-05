@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: $white-1;
+}
+
+.sectionTitle {
+    h2.title_white {
+        @include title($white-1);
+
+        @include tablets {
+            margin-bottom: $num-3;
+            font-size: $num-15;
+        }
+
+        @include x-phones {
+            font-size: $num-18;
+        }
+    }
+}
+
+.sectionTitle {
+    h2.title_brown {
+        @include title($blue-4);
+
+        @include tablets {
+            margin-bottom: $num-3;
+            font-size: $num-15;
+        }
+
+        @include x-phones {
+            font-size: $num-18;
+        }
+    }
+}
+
+.btnWhite {
+    @include btnStyle($white-1, $blue-4, $blue-3, $white-1, $white-1, $blue-3);
+}
+
+.btnBrown {
+    @include btnStyle($blue-4, $white-1, $white-1, $blue-4, $blue-4, $blue-4);
+}
+
+.myCustomTooltip {
+    --bs-tooltip-bg: #704f5b;
+}

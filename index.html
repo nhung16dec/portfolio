@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- BS5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+
+    <!-- BS5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./css/libraries/animate.min.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/cute.png" />
+    <title>Nhung</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navMenu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a id="myLogo" class="navbar-brand" href="#">
+              <img src="./assets/img/brown-logo.png" width="45%" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+              <div class="navbar-nav" id="navbarNav">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <div onclick="changeTheme()" class="theme">
+                  <a id="myIcon"><i class="bi bi-moon-stars-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="home__me">
+            <img src="./assets/img/me-homepage.png" alt="Hi, Welcome to my portfolio !">
+          </div>
+          <div class="home__name" id="my-signature">
+            <img src="./assets/img/name.png" alt="name-home">
+          </div>
+          <div class="home__title">
+            <span id="typingEff"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="aboutMe">
+          <div class="sectionTitle">
+            <h2 class="title_white">about</h2>
+          </div>
+          <div class="aboutMe__info">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-12 info__photo wow animate__animated animate__fadeInLeft">
+                <img src="./assets/img/profil-photo.png" alt="avatar" />
+              </div>
+              <div class="col-xl-8 col-lg-8 col-md-8 col-12 info__content">
+                <div class="info__text wow animate__animated animate__fadeInRight">
+                  Hi! Call me Elly, a 1st-year Data Science student (Master 1) at the University of Tours, currently based in Blois, France.
+                  <br /><br/>
+                  My journey in tech started in 2023 by resuming my studies in the Data Science program and moving to France, driven by my curiosity for data science and croissants 🥐 and french pastries 🍰🧁🥧. 
+                  <br /><br/>
+                  Before that, until 2023, I was in Vietnam, where I had the opportunity to work with remarkable companies as a Management Controller and Business Analyst.
+                  <br/><br/>
+                  I am currently developing strong skills in Python, SQL, data analysis, data processing, and ETL, and I am actively looking for <b style="text-transform: uppercase;">an internship (April 2026) or an alternance (September 2026)</b>. 
+                  <br /><br/>
+                  My long-term goal is to become a <b>Data Scientist</b>, and with the technical and analytical skills I am building, I am eager to contribute meaningful value to real-world data projects and professional opportunities.
+
+                </div>
+                <div class="info__signature wow animate__animated animate__fadeInUp animate__delay-1s">
+                  <div class="info__cv">
+                    <a class="btn btnWhite" type="button"
+                      href="./assets/pdf/CV_Nhung_TRAN.pdf"
+                      target="_blank">
+                      View my CV
+                      <i class="bi bi-filetype-pdf"></i>
+                    </a>
+                  </div>
+                  <div class="signature">
+                    <img src="./assets/img/white-logo2.png" width="35%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="mySkills">
+          <div class="sectionTitle">
+            <h2 class="title_brown">skills</h2>
+          </div>
+          <div class="accordion" id="accordion__skills">
+            <!-- Skills's Title -->
+            <div class="accordion-btnGroups  wow animate__animated animate__fadeInUp">
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseProgram" aria-expanded="false" aria-controls="collapseOthers">
+                  Programming
+                </a>
+              </h2>
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseDatabase" aria-expanded="false" aria-controls="collapseDatabase">
+                  database
+                </a>
+              </h2>
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTools" aria-expanded="false" aria-controls="collapseTools">
+                  tools
+                </a>
+              </h2>
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseGraphics" aria-expanded="false" aria-controls="collapseGraphics">
+                  data visualization
+                </a>
+              </h2>
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseStats" aria-expanded="false" aria-controls="collapseOthers">
+                  Statistics
+                </a>
+              </h2> 
+              <h2 class="accordion-header btnBrown btnSkills">
+                <a class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseLanguage" aria-expanded="false" aria-controls="collapseOthers">
+                  Language
+                </a>
+              </h2>
+            </div>
+    
+            <!-- Sub-skills -->
+            <div class="accordion-contentGroups">
+
+              <div id="collapseProgram" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/python.png" alt="logo" width="50px">
+                    <p class="item__text">python</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/R-logo.png" alt="logo" width="50px">
+                    <p class="item__text">r</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/sql-logo.png" alt="logo" width="50px">
+                    <p class="item__text">sql</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/sas-logo.png" alt="logo" width="50px">
+                    <p class="item__text">sas</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="collapseDatabase" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/postgres-logo.png" alt="logo" width="50px">
+                    <p class="item__text">postgres</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/Oracle-logo.png" alt="logo" width="50px">
+                    <p class="item__text">oracle</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/mysql.png" alt="logo" width="50px">
+                    <p class="item__text">mysql</p>
+                  </div>
+                </div>
+              </div>
+              <div id="collapseTools" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/github.png" alt="logo" width="50px">
+                    <p class="item__text">github</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/docker.png" alt="logo" width="50px">
+                    <p class="item__text">docker</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/dataiku-logo.jpg" alt="logo" width="50px">
+                    <p class="item__text">Dataiku</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/jupyter-logo.jpg" alt="logo" width="50px">
+                    <p class="item__text">Jupiter</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/canva.png" alt="logo" width="50px">
+                    <p class="item__text">canva</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/qgis-logo.png" alt="logo" width="50px">
+                    <p class="item__text">qgis</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/arcgis-logo.png" alt="logo" width="50px">
+                    <p class="item__text">arcgis</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/html.png" alt="logo" width="50px">
+                    <p class="item__text">html5</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/css.png" alt="logo" width="50px">
+                    <p class="item__text">css3</p>
+                  </div>              
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/js.png" alt="logo" width="50px">
+                    <p class="item__text">javascript</p>
+                  </div>  
+                </div>
+              </div>
+              <div id="collapseGraphics" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/powerbi-logo.png" alt="logo" width="50px">
+                    <p class="item__text">powerBI</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/tableau-logo.png" alt="logo" width="50px">
+                    <p class="item__text">Tableau</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/shiny-logo.png" alt="logo" width="50px">
+                    <p class="item__text">R-shiny</p>
+                  </div>
+
+                </div>
+              </div>
+              <div id="collapseLanguage" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/france-flag.png" alt="logo" width="50px">
+                    <p class="item__text">French - Bilingual</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/uk-flag.jpg" alt="logo" width="50px">
+                    <p class="item__text">English - B2</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <img class="item__logo" src="./assets/img/vn-flag.jpg" alt="logo" width="50px">
+                    <p class="item__text">Vietnamese </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="collapseStats" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                  <div class="mySkills__item">
+                    <p class="item__text">Descriptive & Inferential Statistics</p>
+                  </div>
+                  <div class="mySkills__item">
+                    <p class="item__text">Hypothesis testing and confidence intervals</p>
+                  </div>
+                </div>
+              </div>
+              <div id="collapseWebDev" class="accordion-collapse collapse mt-2">
+                <div class="card card-body">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2 class="title_white">projects</h2>
+        </div>
+        <div class="projects__content" id="projectsContent">
+          <!-- projects item here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2 class="title_brown">contact</h2>
+        </div>
+        <div class="contact__content">
+          <div class="row">
+            <div class="contact__name col-md-5 col-12 wow animate__animated animate__fadeInLeft">
+              <h2>TRAN Thi Hong Nhung</h2>
+              <p>Data Science Student (Master 1, France)</p>
+              <p>Connect with me! I'm always excited to collaborate on new opportunities and engage in meaningful discussions.</p>
+            </div>   
+            <div class="contact__social col-md-7 col-12 wow animate__animated animate__fadeInRight">
+              <div class="social__item">
+                <input type="email" id="myEmail" name="Email" value="nhung.datascience@gmail.com" style="display: none;" />
+                <a 
+                  data-bs-toggle="tooltip"
+                  data-bs-custom-class="myCustomTooltip"
+                  data-bs-placement="top"
+                  data-bs-trigger="hover"
+                  data-bs-title="Email"
+                  onclick="copyMyContent('Email')">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </a>
+              </div>
+              <div class="social__item">
+                <a 
+                  href="https://www.linkedin.com/in/thihongnhungtran/" 
+                  target="_blank"
+                  data-bs-toggle="tooltip"
+                  data-bs-custom-class="myCustomTooltip"
+                  data-bs-placement="top"
+                  data-bs-trigger="hover"
+                  data-bs-title="Linkedin">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+              <div class="social__item">
+                <a 
+                  href="https://github.com/nhung16dec" target="_blank"
+                  data-bs-toggle="tooltip"
+                  data-bs-custom-class="myCustomTooltip"
+                  data-bs-placement="top"
+                  data-bs-trigger="hover"
+                  data-bs-title="Github">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>              
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button onclick="topFunc()" id="myBtn" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+    
+    <!-- BS5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed JS - for typing effects -->
+    <script src="./js/libraries/typed.umd.js"></script>
+    <script>
+      let typed = new Typed("#typingEff", {
+        strings: ["Data Science Student (1st year Master)"],
+        typeSpeed: 120
+      });
+    </script>
+
+    <!-- Wow JS - for animation -->
+    <script src="./js/libraries/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html> 

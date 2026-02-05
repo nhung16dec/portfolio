@@ -1,0 +1,84 @@
+// Animation 
+@mixin animation($name-animation, $duration, $iteration-count) {
+    animation: $name-animation $duration $iteration-count;
+}
+
+// h2.title
+@mixin title ($color) {
+    font-size: $num-9;
+    text-transform: capitalize;
+    font-weight: $fw-4;
+    margin-bottom: $num-5;
+    color: $color;
+    letter-spacing: 2px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $color;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+// background_brown 
+@mixin background {
+    background-color: $blue-4;
+}
+
+// button (white or brown) 
+@mixin btnStyle ($bgColor, $textColor, $bgHover, $textHover, $border, $borderHover) {
+    background-color: $bgColor;
+    border-radius: $num-3;
+    padding: $num-3 + 2 $num-6 - 1;
+    font-weight: $fw-5;
+    font-size: $num-5 - 2;
+    color: $textColor;
+    border: 2px solid $border;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $bgHover;
+        color: $textHover;
+        border-color: $borderHover;
+    }
+}
+
+// Responsive 
+// x-large devices - Large desktop - 1400px
+@mixin large-desktops {
+    @media (max-width: map-get($breakpoints, xxl)) {
+        @content;
+    }
+}
+
+// large devices - desktops - 1200px 
+@mixin desktops {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+// medium devices - tables - 992px
+@mixin tablets {
+    @media screen and (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+// small devices - phones - 768px 
+@mixin phones {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+// x-small devices - portrait phones - 576px
+@mixin x-phones {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}

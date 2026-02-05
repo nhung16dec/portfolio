@@ -1,0 +1,159 @@
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        .row {
+            display: flex;
+            align-items: center;
+
+            .home__left {
+                text-transform: capitalize;
+
+                .home__welcome {
+                    margin-bottom: $num-9 + 2;
+
+                    .home__text {
+                        font-size: 1.5rem;
+
+                        @include desktops {
+                            font-size: 1.25rem;
+                        }
+
+                        @include x-phones {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    hr {
+                        width: $num-12;
+                        color: $blue-4;
+
+                        @include phones {
+                            width: 50%;
+                            margin: 1rem auto;
+                        }
+
+                        @include x-phones {
+                            width: 35%;
+                        }
+                    }
+                }
+
+                .home__name {
+                    font-size: $num-10;
+                    font-weight: $fw-5;
+                    color: $blue-4;
+
+                    a {
+                        text-decoration: none;
+                        color: $blue-4;
+                    }
+
+                    @include desktops {
+                        font-size: $num-9 + 2;
+                    }
+
+                    @include tablets {
+                        font-size: $num-18 + 4;
+                    }
+
+                    @include phones {
+                        font-size: $num-18 + 5;
+                    }
+
+                    @include x-phones {
+                        font-size: $num-8;
+                    }
+                }
+
+                .home__text {
+                    margin-top: $num-5;
+                    font-size: $num-8;
+                    color: $blue-3;
+
+                    span {
+                        color: $blue-4;
+                        font-weight: $fw-5;
+                        border-bottom: 2px solid $blue-4;
+                    }
+
+                    @include large-desktops {
+                        font-size: $num-7;
+                    }
+
+                    @include tablets {
+                        font-size: $num-6 - 1;
+                        margin-top: $num-3;
+                    }
+
+                }
+
+                @include phones {
+                    text-align: center;
+                    padding-bottom: $num-6;
+                }
+            }
+
+            .home__right {
+                padding: 0;
+                display: flex;
+                justify-content: right;
+
+                img {
+                    width: 50%;
+
+                    @include phones {
+                        width: 45%;
+                    }
+
+                    @include x-phones {
+                        width: 40%;
+                    }
+                }
+
+                @include phones {
+                    justify-content: center;
+                }
+
+            }
+
+            .home__me {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 20%;
+                }
+            }
+
+            .home__name {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            .home__title {
+                text-align: center;
+                font-size: $num-6;
+                color: $dark-1;
+            }
+
+            @include phones {
+                justify-content: center;
+            }
+        }
+
+        @include phones {
+            padding-top: $num-12;
+        }
+
+        @include x-phones {
+            padding-top: 0;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.projects {
+    padding-top: $num-12;
+    @include background;
+
+    .container {
+        padding: $num-9 $num-7;
+
+        .sectionTitle {
+            .title_white::before {
+                left: $num-14 + $num-6;
+
+                @include tablets {
+                    left: $num-14 + 10;
+                }
+
+                @include x-phones {
+                    left: $num-14 - 10;
+                    top: $num-6;
+                }
+            }
+        }
+
+        .projects__content {
+            padding: $num-9 0;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+
+            .projects__item {
+                margin-bottom: $num-6;
+                display: flex;
+                justify-content: center;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+                .card {
+                    background: $white-1;
+                    border: none;
+                    width: 18rem;
+
+                    img {}
+
+                    .card-body {
+
+                        .tech {
+
+                            .tech__content {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .tech__item {
+                                    background: $blue-1;
+                                    text-decoration: none;
+                                    color: $blue-4;
+                                    padding: $num-2 $num-3;
+                                    margin-right: $num-2;
+                                    margin-bottom: $num-2;
+                                    border-radius: $num-3;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .card-footer {
+                        background: $white-1;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: $num-4;
+
+                        .btnBrown {
+                            padding: $num-2 + 1 $num-3 + 2;
+                            font-size: $num-4 + 1;
+                            text-transform: uppercase;
+                        }
+
+                    }
+                }
+            }
+
+            .visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            @include large-desktops {
+                grid-template-columns: repeat(3, auto);
+            }
+
+            @include tablets {
+                grid-template-columns: repeat(2, auto);
+            }
+
+            @include phones {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}

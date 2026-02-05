@@ -1,0 +1,11 @@
+@keyframes moveImage {
+    0% {
+        transform: rotate(3deg) translate(3px, 3px);
+    }
+    50% {
+        transform: rotate(-3deg) translate(-3px, -3px);
+    }
+    100% {
+        transform: rotate(3deg) translate(3px, 3px);
+    }
+}

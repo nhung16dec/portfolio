@@ -1,0 +1,5 @@
+.DS_Store
+.vscode
+qr-code.png
+node_modules
+note.txt

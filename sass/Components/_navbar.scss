@@ -1,0 +1,128 @@
+.navMenu {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: $white-1;
+    z-index: 1000;
+
+    .container {
+        .navbar {
+            .container-fluid {
+                padding: 0;
+                align-items: center;
+
+                .navbar-brand {
+                    font-size: $num-8;
+                    font-weight: $fw-5;
+                    color: $blue-4;
+
+                    img {
+                        @include x-phones {
+                            width: 35%;
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    background-color: $blue-1;
+
+                    span {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23704f5b' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+                        @include phones {
+                            width: 1.2em;
+                            height: 1.2em;
+                        }
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                        background: $blue-4;
+
+                        span {
+                            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F8F7F4' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                        }
+                    }
+                }
+
+                .offcanvas {
+                    flex-grow: 0;
+
+                    .navbar-nav {
+
+                        .nav-link {
+                            position: relative;
+                            margin-right: $num-5;
+                            padding-left: 0;
+                            color: $blue-3;
+                            font-size: $num-5;
+                            font-weight: $fw-4;
+                            transition: all .3s ease-in-out;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                width: 0;
+                                height: $num-1 - 1;
+                                background-color: $blue-4;
+                                left: 0;
+                                bottom: $num-2;
+                                visibility: visible;
+                                transition: all .3s ease-in-out;
+                            }
+
+                            &:hover::before,
+                            &.active::before,
+                            &.active,
+                            &:hover {
+                                visibility: visible;
+                                width: 82%;
+                                color: $blue-4;
+                                font-weight: $fw-6;
+                            }
+
+                            @include tablets {
+                                padding-bottom: $num-4;
+                                text-align: end;
+                                text-transform: uppercase;
+
+                                &::before {
+                                    content: none;
+                                }
+                            }
+                        }
+
+                        .theme {
+                            font-size: $num-6 - 2;
+                            margin-left: $num-4;
+                            cursor: pointer;
+                            color: $blue-4;
+                            display: flex;
+                            align-items: center;
+
+                            @include tablets {
+                                justify-content: flex-end;
+                                margin-right: $num-4;
+                                padding-top: $num-3 - 2;
+                            }
+                        }
+                    }
+
+                    @include tablets {
+                        width: 35%;
+                        justify-content: center;
+                        align-items: flex-end;
+                        background-color: rgba(247, 246, 243, 0.8);
+                    }
+                }
+
+            }
+
+            @include phones {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
