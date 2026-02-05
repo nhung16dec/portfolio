@@ -83,7 +83,7 @@ const changeTheme = () => {
     if (element.classList.contains("dark-mode")) {
         document.getElementById("myIcon").innerHTML = `<i class="bi bi-sun-fill"></i>`;
         document.getElementById("myLogo").innerHTML = `<img src="./assets/img/white-logo.png" width="45%" />`;
-        document.getElementById("my-signature").innerHTML = `<img src="./assets/img/name-white.svg" alt="name-home">`;
+        document.getElementById("my-signature").innerHTML = `<img src="./assets/img/name-white.png" alt="name-home">`;
         document.getElementById("typingEff").style.color = "#F8F7F4";
     } else {
         document.getElementById("myIcon").innerHTML = `<i class="bi bi-moon-stars-fill"></i>`;
