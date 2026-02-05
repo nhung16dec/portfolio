@@ -64,6 +64,11 @@
 
                             &:not(.collapsed) {
                                 box-shadow: none;
+                                background-color: $blue-1; 
+                                color: $white-1;            
+                                border-radius: $num-3;      
+                                padding: $num-2 $num-4;      
+                                font-weight: $fw-5;         
                             }
 
                             @include desktops {

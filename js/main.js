@@ -89,7 +89,7 @@ const changeTheme = () => {
         document.getElementById("myIcon").innerHTML = `<i class="bi bi-moon-stars-fill"></i>`;
         document.getElementById("myLogo").innerHTML = `<img src="./assets/img/brown-logo.png" width="45%" />`;
         document.getElementById("my-signature").innerHTML = `<img src="./assets/img/name.png" alt="name-home">`;
-        document.getElementById("typingEff").style.color = "#704f5b";
+        document.getElementById("typingEff").style.color = "#6096B4";
     }
 };
 
