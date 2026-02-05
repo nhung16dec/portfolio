@@ -20,8 +20,8 @@ const projectsList = [
         name: "Database Friends",
         desc: "Ce projet vise à créer et à alimenter une base de données dédiée à la série Friends, en intégrant des données variées comme les personnages, les acteurs, les épisodes et les saisons.",
         techList: ["Python", "BeautifulSoup", "Postgres", "SQL"],
-        linkDemo: "",
-        linkGit: ""
+        linkDemo: "./assets/pdf/proj_BDD.pdf",
+        linkGit: "https://github.com/nhung16dec/SAE_BDD_BUT2"
     },
     // {
     //     img: "project4.png",
@@ -33,15 +33,15 @@ const projectsList = [
     // },
     {
         img: "acp.png",
-        name: "shopping cart",
+        name: "ACP Analysis",
         desc: "Étude sensorielle sur une degustation d’eau aromatisée via l'ACP et les tests statistiques",
         techList: ["R", "Rshiny", "Test statistic"],
         linkDemo: "https://www.youtube.com/watch?v=ukGTO55Rfmo",
-        linkGit: ""
+        linkGit: "https://github.com/nhung16dec/Analyse_multi_project_senso"
     },
     {
         img: "sondage.png",
-        name: "Méthode d'échantillonage'",
+        name: "Méthode d'échantillonage '",
         desc: "Analyse statistique des mariages maghrébins par méthodes d'échantillonnage.",
         techList: ["R"],
         linkDemo: "",
