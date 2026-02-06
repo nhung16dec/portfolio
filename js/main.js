@@ -16,14 +16,6 @@ const projectsList = [
         linkDemo: "./assets/pdf/proj_BDD.pdf",
         linkGit: "https://github.com/nhung16dec/SAE_BDD_BUT2"
     },
-    // {
-    //     img: "project4.png",
-    //     name: "my portfolio",
-    //     desc: "Created my own personal website, fully responsive for all devices.",
-    //     techList: ["HTML5", "CSS3", "Bootstrap 5", "SASS", "JavaScript"],
-    //     linkDemo: "https://portfolio-chi-one-26.vercel.app/",
-    //     linkGit: "https://github.com/nganle2911/my-portfolio"
-    // },
     {
         img: "acp.png",
         name: "ACP Analysis",
