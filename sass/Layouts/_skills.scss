@@ -64,11 +64,6 @@
 
                             &:not(.collapsed) {
                                 box-shadow: none;
-                                background-color: $blue-1; 
-                                color: $white-1;            
-                                border-radius: $num-3;      
-                                padding: $num-2 $num-4;      
-                                font-weight: $fw-5;         
                             }
 
                             @include desktops {
@@ -94,7 +89,7 @@
                                 font-weight: $fw-5;
 
                                 &::after {
-                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23704f5b' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236096B4' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
                                 }
                             }
 
@@ -134,16 +129,16 @@
 
                         .card-body {
                             display: grid;
-                            grid-template-columns: repeat(5, auto);
-                            grid-gap: $num-5;
-                            padding: $num-5;
+                            grid-template-columns: repeat(10, auto);
+                            grid-gap: $num-2;
+                            padding: $num-2;
 
                             .mySkills__item {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 background-color: $white-1;
-                                padding: $num-5 $num-7;
+                                //padding: $num-5 $num-7;
                                 background: $white-2;
                                 border-radius: $num-4;
                                 transition: all .3s ease-in-out;

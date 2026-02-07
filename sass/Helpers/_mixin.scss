@@ -1,3 +1,4 @@
+@use "sass:map";
 // Animation 
 @mixin animation($name-animation, $duration, $iteration-count) {
     animation: $name-animation $duration $iteration-count;
@@ -50,35 +51,35 @@
 // Responsive 
 // x-large devices - Large desktop - 1400px
 @mixin large-desktops {
-    @media (max-width: map-get($breakpoints, xxl)) {
+    @media (max-width: map.get($breakpoints, xxl)) {
         @content;
     }
 }
 
 // large devices - desktops - 1200px 
 @mixin desktops {
-    @media (max-width: map-get($breakpoints, xl)) {
+    @media (max-width: map.get($breakpoints, xl)) {
         @content;
     }
 }
 
 // medium devices - tables - 992px
 @mixin tablets {
-    @media screen and (max-width: map-get($breakpoints, lg)) {
+    @media screen and (max-width: map.get($breakpoints, lg)) {
         @content;
     }
 }
 
 // small devices - phones - 768px 
 @mixin phones {
-    @media (max-width: map-get($breakpoints, md)) {
+    @media (max-width: map.get($breakpoints, md)) {
         @content;
     }
 }
 
 // x-small devices - portrait phones - 576px
 @mixin x-phones {
-    @media (max-width: map-get($breakpoints, sm)) {
+    @media (max-width: map.get($breakpoints, sm)) {
         @content;
     }
 }
