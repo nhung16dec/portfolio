@@ -102,7 +102,7 @@ body {
 }
 
 .myCustomTooltip {
-  --bs-tooltip-bg: $blue-4;
+  --bs-tooltip-bg: #6096B4;
 }
 
 @keyframes moveImage {
