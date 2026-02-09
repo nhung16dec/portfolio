@@ -13,7 +13,7 @@
 
                 #navbarNav {
                     .nav-link {
-                        color: $blue-2;
+                        color: $brown-2;
 
                         &::before {
                             background-color: $white-1;
@@ -30,7 +30,7 @@
                 }
 
                 #myIcon {
-                    color: $blue-1;
+                    color: $brown-1;
                 }
             }
 
@@ -41,12 +41,12 @@
         .home__left {
             .home__name {
                 a {
-                    color: $blue-1;
+                    color: $brown-1;
                 }
             }
 
             .home__text {
-                color: $blue-2;
+                color: $brown-2;
 
                 span {
                     color: $white-1;
@@ -71,11 +71,11 @@
             .accordion-contentGroups {
                 .accordion-collapse {
                     .card {
-                        background: $blue-3;
+                        background: $brown-3;
 
                         .mySkills__item {
                             .item__text {
-                                color: $blue-4;
+                                color: $brown-4;
                             }
                         }
                     }
@@ -98,11 +98,11 @@
         .contact__content {
             .contact__name {
                 h2 {
-                    color: $blue-1;
+                    color: $brown-1;
                 }
 
                 p:nth-child(2) {
-                    color: $blue-3;
+                    color: $brown-3;
                 }
             }
         }

@@ -1,7 +1,7 @@
 #myBtn {
     display: none;
     position: fixed;
-    background: $blue-4;
+    background: $brown-4;
     bottom: 30px;
     right: 30px;
     color: $white-2;
@@ -14,7 +14,7 @@
 
     &:hover {
         background-color: $white-1;
-        border: 2px solid $blue-4;
-        color: $blue-4;
+        border: 2px solid $brown-4;
+        color: $brown-4;
     }
 }

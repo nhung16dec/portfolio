@@ -28,7 +28,7 @@
 
                     hr {
                         width: $num-12;
-                        color: $blue-4;
+                        color: $brown-4;
 
                         @include phones {
                             width: 50%;
@@ -44,11 +44,11 @@
                 .home__name {
                     font-size: $num-10;
                     font-weight: $fw-5;
-                    color: $blue-4;
+                    color: $brown-4;
 
                     a {
                         text-decoration: none;
-                        color: $blue-4;
+                        color: $brown-4;
                     }
 
                     @include desktops {
@@ -71,12 +71,12 @@
                 .home__text {
                     margin-top: $num-5;
                     font-size: $num-8;
-                    color: $blue-3;
+                    color: $brown-3;
 
                     span {
-                        color: $blue-4;
+                        color: $brown-4;
                         font-weight: $fw-5;
-                        border-bottom: 2px solid $blue-4;
+                        border-bottom: 2px solid $brown-4;
                     }
 
                     @include large-desktops {
@@ -122,10 +122,11 @@
             .home__me {
                 display: flex;
                 justify-content: center;
-
+                color: $brown-4;
+                /*
                 img {
                     width: 20%;
-                }
+                }*/
             }
 
             .home__name {
@@ -140,7 +141,7 @@
             .home__title {
                 text-align: center;
                 font-size: $num-6;
-                color: $dark-1;
+                color: $brown-4;
             }
 
             @include phones {

@@ -26,7 +26,7 @@
                 .contact__name {
                     h2 {
                         text-transform: capitalize;
-                        color: $blue-4;
+                        color: $brown-4;
                         font-weight: $fw-6;
                         margin-bottom: 0;
                         font-size: $num-8;
@@ -37,7 +37,7 @@
                     }
 
                     p:nth-child(2) {
-                        color: $blue-3;
+                        color: $brown-3;
                         font-size: $num-5 + 1;
                     }
 
@@ -54,7 +54,7 @@
 
                     .social__item {
                         a {
-                            background: $blue-4;
+                            background: $brown-4;
                             width: $num-10 + $num-3;
                             height: $num-10 + $num-3;
                             line-height: $num-10 + $num-3;
@@ -67,8 +67,8 @@
                             
                             &:hover {
                                 background: $white-1;
-                                color: $blue-4;
-                                border: 2px solid $blue-4;
+                                color: $brown-4;
+                                border: 2px solid $brown-4;
                             }
 
                             @include tablets {
