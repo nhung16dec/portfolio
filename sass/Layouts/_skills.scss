@@ -89,7 +89,7 @@
                                 font-weight: $fw-5;
 
                                 &::after {
-                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238B5E3C' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238B1E1E' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
                                 }
                             }
 
@@ -132,6 +132,7 @@
                             grid-template-columns: repeat(10, auto);
                             grid-gap: $num-2;
                             padding: $num-2;
+                            background-color: transparent;
 
                             .mySkills__item {
                                 display: flex;

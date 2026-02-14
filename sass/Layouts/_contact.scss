@@ -1,5 +1,6 @@
 .contact {
     padding-top: $num-12;
+    @include background;
 
     .container {
         padding: $num-9 $num-7;
@@ -26,7 +27,8 @@
                 .contact__name {
                     h2 {
                         text-transform: capitalize;
-                        color: $brown-4;
+                        // color: $brown-4;
+                        color: $white-1;
                         font-weight: $fw-6;
                         margin-bottom: 0;
                         font-size: $num-8;
@@ -37,12 +39,13 @@
                     }
 
                     p:nth-child(2) {
-                        color: $brown-3;
+                        color: $white-2;
                         font-size: $num-5 + 1;
                     }
 
                     p:nth-child(3) {
                         font-size: $num-5 - 2;
+                        color: $white-2;
                     }
 
 
@@ -54,7 +57,7 @@
 
                     .social__item {
                         a {
-                            background: $brown-4;
+                            background: $white-2;
                             width: $num-10 + $num-3;
                             height: $num-10 + $num-3;
                             line-height: $num-10 + $num-3;
@@ -62,13 +65,13 @@
                             text-align: center;
                             border-radius: 50%;
                             font-size: $num-6;
-                            color: $white-1;
+                            color: $brown-4;
                             transition: all .5s ease;  
                             
                             &:hover {
-                                background: $white-1;
-                                color: $brown-4;
-                                border: 2px solid $brown-4;
+                                background: $brown-4;
+                                color: $white-2;
+                                border: 2px solid $brown-1;
                             }
 
                             @include tablets {

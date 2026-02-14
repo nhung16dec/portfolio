@@ -38,10 +38,13 @@
     }
 
     #home {
+        .home__me{
+            color: $white-1;
+        }
         .home__left {
             .home__name {
                 a {
-                    color: $brown-1;
+                    color: $white-1;
                 }
             }
 
@@ -56,12 +59,21 @@
         }
     }
     #about {
+
         .sectionTitle {
             .title_brown {
                 color: $white-1;
-
                 &::after {
                     background-color: $white-1;
+                }
+            }
+        }
+        .aboutMe__info{
+            .row{
+                .info__content{
+                    .info__text{
+                        color: $white-1;
+                    }
                 }
             }
         }
@@ -77,6 +89,7 @@
             }
         }
     }
+    
     #skills {
         .sectionTitle {
             .title_brown {
@@ -119,11 +132,11 @@
         .contact__content {
             .contact__name {
                 h2 {
-                    color: $brown-1;
+                    color: $white-1;
                 }
 
                 p:nth-child(2) {
-                    color: $brown-3;
+                    color: $white-2;
                 }
             }
         }
