@@ -55,7 +55,28 @@
             }
         }
     }
+    #about {
+        .sectionTitle {
+            .title_brown {
+                color: $white-1;
 
+                &::after {
+                    background-color: $white-1;
+                }
+            }
+        }
+    }
+    #projects {
+        .sectionTitle {
+            .title_brown {
+                color: $white-1;
+
+                &::after {
+                    background-color: $white-1;
+                }
+            }
+        }
+    }
     #skills {
         .sectionTitle {
             .title_brown {

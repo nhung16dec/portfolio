@@ -411,7 +411,6 @@ body {
 
 .about {
   padding-top: 100px;
-  background-color: #8B5E3C;
 }
 .about .container {
   padding: 48px 30px;
@@ -445,7 +444,7 @@ body {
 }
 .about .container .aboutMe .aboutMe__info .row .info__content .info__text {
   font-size: 20px;
-  color: #F1E6DA;
+  color: #8B5E3C;
   text-align: justify;
 }
 @media screen and (max-width: 991.98px) {
@@ -700,7 +699,6 @@ body {
 
 .projects {
   padding-top: 100px;
-  background-color: #8B5E3C;
 }
 .projects .container {
   padding: 48px 30px;
@@ -901,6 +899,18 @@ body {
 .dark-mode #home .home__left .home__text span {
   color: #F8F7F4;
   border-bottom: 2px solid #F8F7F4;
+}
+.dark-mode #about .sectionTitle .title_brown {
+  color: #F8F7F4;
+}
+.dark-mode #about .sectionTitle .title_brown::after {
+  background-color: #F8F7F4;
+}
+.dark-mode #projects .sectionTitle .title_brown {
+  color: #F8F7F4;
+}
+.dark-mode #projects .sectionTitle .title_brown::after {
+  background-color: #F8F7F4;
 }
 .dark-mode #skills .sectionTitle .title_brown {
   color: #F8F7F4;

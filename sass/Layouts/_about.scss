@@ -1,6 +1,6 @@
 .about {
     padding-top: $num-12;
-    @include background;
+    // @include background;
 
     .container {
         padding: $num-9 $num-7;
@@ -40,7 +40,7 @@
                     .info__content {
                         .info__text {
                             font-size: $num-5;
-                            color: $brown-1;
+                            color: $brown-4;
                             text-align: justify;
 
                             @include tablets {
