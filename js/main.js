@@ -1,5 +1,14 @@
 const projectsList = [
     {
+        img: "post-rag-vs-fine-tuning.jpg",
+        name: "RAG / Fine-tuning",
+        desc: "Conception d’un Data Lake pour l’exploitation de données hétérogènes par un système d’IA générative.",
+        techList: ["MongoDB", "Python", "Deep Learning", "RAG", "Fine tunning"],
+        linkDemo: "",
+        linkGit: ""
+    },
+    
+    {
         img: "dpe.png",
         name: "DPE",
         desc: "Etude de modification de l’immeuble pour réduire la consommation électrique.",
